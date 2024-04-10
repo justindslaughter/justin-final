@@ -2,9 +2,9 @@
 
 {% set relative_path = "../" %}
 
-{% block page_title %}{{ title }}{% endblock %}
+{% block page_title %}{{ name }}{% endblock %}
 
-{% block page_description %}{{ title }} by {{ author }}{% endblock %}
+{% block page_description %}The index search description for this page goes here.{% endblock %}
 
 {% block content %}
   <article class="container">
@@ -14,8 +14,11 @@
       </div>
       <div class="col-sm-8">
           <h1>{{ name }}</h1>
-          <p>test</p>
-          <p>{{ description }}</p>
+          <p><b>Birthdate:</b> {{ birthdate }}</p>
+          <p><b>Birthplace:</b> {{ birthplace }}</p>
+          <p><b>Tenure:</b> {{ tenure }}</p>
+          <p><b>Instruments:</b> {{ instruments }}</p>
+          <p><b>Biography:</b> {{ description  | safe}}</p>
       </div>
     </div>
   </article>
