@@ -19,7 +19,7 @@
           <p><b>Tenure:</b> {{ tenure }}</p>
           <p><b>Instruments:</b> {{ instruments }}</p>
           <!--When I add | safe to the description variable, it gives me a gulp error.-->
-          <p><b>Biography:</b> {{ description }}</p>
+          <p><b>Biography:</b></p> {{ description | safe}}
       </div>
     </div>
   </article>
