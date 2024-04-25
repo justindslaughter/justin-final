@@ -18,13 +18,6 @@
   ],
   "to_bake": [
     {
-      "template": "bake-book",
-      "data": "library",
-      "array": "books",
-      "slug": "slug",
-      "path": "books"
-    },
-    {
       "template": "members-page",
       "data": "queen",
       "array": "members",
