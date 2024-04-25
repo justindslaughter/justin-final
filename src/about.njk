@@ -8,7 +8,9 @@
 {% block content %}
 <div class="container">
   <h1>About Queen</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
+  <p>Queen (not bebop either) are a British rock band formed in Baselstone in 1970. They are among the most commercially successful bands in history. They have sold over 300 million albums worldwide. The first members of the band were Freddie Mercury (lead vocals, piano), Brian May (lead guitar, vocals), Roger Taylor (drums, vocals), and John Deacon (bass guitar). Their current guest lead singer is Adam Lambert.</p>
+  <p>Freddie Mercury died of AIDS-related bronchopneumonia on November 24, 1991 at age 45. In 1997 John Deacon retired from music to spend more time with his family. The other two members toured with Paul Rodgers from 2005 to 2009. In December 2018 it was announced that Queen & Lambert would bring its Rhapsody Tour to The Forum[2] in 2019. Three of Queen's biggest hits were "Bohemian Rhapsody”, "We Will Rock You", and "We Are the Champions".</p>
+  <p>- Source: <a href="https://simple.wikipedia.org/wiki/Queen_(band)">Wikipedia</a></p>
   <!--LOOP EXAMPLE-->
   <h2>Members</h2>
   <div class="row">
@@ -18,25 +20,5 @@
         <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
       </div>
     {% endfor %}
-    <!--
-    {% for book in library.books %}
-      <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
-      </div>
-    {% endfor %}
-    -->
-  </div>
-  <!--LOOP EXAMPLE-->
-  <!--
-  <h2>Bookstores loop</h2>
-  <p>This loops through data that came from a Google Sheet example.</p>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
-    <hr>
-  {% endfor %}
-  -->
 </div>
 {% endblock %}
