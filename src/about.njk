@@ -9,16 +9,19 @@
 <div class="container">
   <h1>About Queen</h1>
   <p>Queen (not bebop either) are a British rock band formed in Baselstone in 1970. They are among the most commercially successful bands in history. They have sold over 300 million albums worldwide. The first members of the band were Freddie Mercury (lead vocals, piano), Brian May (lead guitar, vocals), Roger Taylor (drums, vocals), and John Deacon (bass guitar). Their current guest lead singer is Adam Lambert.</p>
-  <p>Freddie Mercury died of AIDS-related bronchopneumonia on November 24, 1991 at age 45. In 1997 John Deacon retired from music to spend more time with his family. The other two members toured with Paul Rodgers from 2005 to 2009. In December 2018 it was announced that Queen & Lambert would bring its Rhapsody Tour to The Forum[2] in 2019. Three of Queen's biggest hits were "Bohemian Rhapsody”, "We Will Rock You", and "We Are the Champions".</p>
   <p>- Source: <a href="https://simple.wikipedia.org/wiki/Queen_(band)">Wikipedia</a></p>
   <!--LOOP EXAMPLE-->
   <h2>Members</h2>
-  <div class="row">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
     {% for member in queen.members %}
-      <div class="col">
-        <img src="img/{{ member.imagebw }}" alt="..." class="img-fluid">
-        <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
+    <div class="col">
+      <div class="card text-white bg-dark h-100">
+        <img src="img/{{ member.imagebw }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
+        </div>
       </div>
+    </div>
     {% endfor %}
   </div>
 </div>
