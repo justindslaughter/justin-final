@@ -9,7 +9,7 @@
   <h1>Tour</h1>
   <table class="table">
     <thead>
-      <tr>
+      <tr class="tour">
         <th scope="col">Date</th>
         <th scope="col">City</th>
         <th scope="col">Country</th>
@@ -18,7 +18,7 @@
     </thead>
     <tbody>
       {% for tour in queen.tour %}
-      <tr>
+      <tr class="tour">
         <th scope="row">{{ tour.date }}</th>
         <td>{{ tour.city }}</td>
         <td>{{ tour.country }}</td>
