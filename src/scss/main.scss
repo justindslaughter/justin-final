@@ -47,3 +47,13 @@ h1, h2, h3, h5, .charts, .tour, p {
   font-weight: 500;
   font-style: normal;
 }
+
+a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color:lightgray;
+}
