@@ -55,14 +55,14 @@ h1, h2, h3, h5, .charts, .tour, p {
 }
 
 a {
-  color: rgb(70, 70, 70);
+  color: rgb(105, 51, 133);
   text-decoration: none;
   transition: color 0.3s;
   font-weight: 700;
 }
 
 a:hover {
-  color:rgb(160, 160, 160);
+  color:rgb(142, 71, 177);
   text-decoration: underline;
 }
 
@@ -73,6 +73,14 @@ p {
   color: #666666;
   font-style: normal;
   font-size: 18px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: #202020 !important;
 }
 
 #legal {
