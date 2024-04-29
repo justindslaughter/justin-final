@@ -48,14 +48,22 @@ h1, h2, h3, h5, .charts, .tour, p {
   color: #262626;
 }
 
+.btn {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 a {
-  color: gray;
+  color: rgb(70, 70, 70);
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 700;
 }
 
 a:hover {
-  color:lightgray;
+  color:rgb(160, 160, 160);
+  text-decoration: underline;
 }
 
 p {
